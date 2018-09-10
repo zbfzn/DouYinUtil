@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="使用过程中请勿关闭程序！！如可以请将软件加入白名单,不确保100%无水印"
+       android:textSize="11sp"
+       android:textColor="@color/colorAccent"
+       android:layout_gravity="center_horizontal"/>
+
+   <Button
+       android:id="@+id/start"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="20dp"
+       android:textSize="16sp"
+       android:text="启动服务"/>
+   <Button
+       android:id="@+id/stop"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="20dp"
+       android:textSize="16sp"
+       android:text="关闭服务"
+       android:enabled="false"/>
+   <TextView
+       android:id="@+id/notice"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       android:text="已启动服务"
+       android:textSize="15sp"
+       android:textColor="@color/colorAccent"
+       android:visibility="gone"/>
+   <ImageView
+       android:layout_width="250dp"
+       android:layout_height="250dp"
+       android:src="@drawable/me"
+       android:layout_gravity="center_horizontal"/>
+
+   <TextView
+       android:id="@+id/toSolve"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:textColor="@color/colorPrimary"
+       android:text="如果还是有水印，点击此处粘贴链接进行解析"
+       android:gravity="bottom"
+       android:textSize="13sp"
+       android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
